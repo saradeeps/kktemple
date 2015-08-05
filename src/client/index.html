@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "temple">
+<head>
+    <base href='/'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title ng-bind="title + ' | Kurunji Kumaran Temple'"></title>
+
+    <!-- build:css styles/lib.css -->
+    <!--bower:css-->
+    <link rel="stylesheet" href="/bower_components/toastr/toastr.css" />
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!--endbower-->
+    <!-- endbuild -->
+
+    <!-- build:css styles/app.css -->
+    <!--inject:css-->
+
+    <link rel="stylesheet" href="/src/client/css/animate.css">
+
+    <link rel="stylesheet" href="/src/client/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/src/client/css/main.css">
+
+    <link rel="stylesheet" href="/src/client/css/prettyPhoto.css">
+
+    <!--endinject-->
+    <!-- endbuild -->
+
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->  
+
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+<body >
+    
+    <div ui-view="header" autoscroll="false"></div>
+    <div ui-view="content"  autoscroll="false"></div>
+    <div ui-view="footer" autoscroll="false"></div>
+
+    
+    <!-- build:js js/lib.js -->
+    <!--bower:js-->
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/toastr/toastr.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/html5shiv/dist/html5shiv.js"></script>
+    <script src="/bower_components/respond/dest/respond.src.js"></script>
+    <!--endbower-->
+    <!-- endbuild -->
+
+    <!-- build:js js/app.js -->
+    <!--inject:js-->
+
+    <script src="/src/client/app/app.module.js"></script>
+
+    <script src="/src/client/app/common/common.services.module.js"></script>
+
+    <script src="/src/client/app/common/dataservice.js"></script>
+
+    <script src="/src/client/app/common/mailchimp.js"></script>
+
+    <script src="/src/client/app/contactus/contactusCtrl.js"></script>
+
+    <script src="/src/client/app/shared/footerCtrl.js"></script>
+
+    <script src="/src/client/app/events/eventsCtrl.js"></script>
+
+    <!--endinject--> 
+
+    <!-- inject:templates:js -->
+    <!--endinject--> 
+    <!-- endbuild --> 
+   
+   
+</body>
+</html>

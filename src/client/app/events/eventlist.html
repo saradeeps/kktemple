@@ -1,0 +1,32 @@
+ <section id="title" class="emerald">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>Upcoming Events</h1>
+                    <p>Below the upcming events.find the events calander for full events..</p>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="breadcrumb pull-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li class="active">FAQ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section><!--/#title-->        
+
+    <section id="faqs" class="container">
+        <ul class="faq unstyled">
+            <li ng-repeat="event in vm.eventList.items">
+                <span class="number">{{$index + 1}}</span>
+                <div>
+                    <h4>{{event.summary}}</h4>
+                    <p>{{event.description}}</p>
+                    <p>When : {{event.start.dateTime}} - {{event.end.dateTime}}</p>
+                </div>
+            </li>
+        </ul>
+    </section><!--#faqs-->
+
+    
